@@ -1,0 +1,8 @@
+There are some certain differences between singly linked list (SLL) and vector. For SLL, it has the obvious advantage that when inserting an element, it would be much easier as it just need to rebuild the bound on the element in the position and next to this element. So the complexity could be just 1. Meanwhile, for vector, as each insertion must cause the elements after the inserting element moving to give the blank space, the complexity could be n which is a lot larger than insertion in SLL.
+
+
+Also, the size of the SLL is flexible, means that it saves space.  On the other hand, for vector, the space is fixed and as it needs to be expanded, in this example, it needs to enlarge for 2 times. Which might cause wastes.
+
+The sorting complexity of three basic sorting in SLL is still n^2, but with the merge sort, it could reduce the complexity for a little bit.
+
+For vectors, the complexity of the basic sorting is still n^2.

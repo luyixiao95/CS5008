@@ -1,0 +1,13 @@
+1. int argc means the whole number of the char, and the argv[] means the array of the char, and **argv[] means the address of the first element in the array stored.
+
+2. char* means the address of the starting letter of a string array.
+
+3. The aim of this line is to let the buffer char stored in the heap. In the coding in the github, if LSH_TOK_BUFSIZE is set to 64, as what the turtorial written, the malloc memory should be 64 bytes.
+
+4. What do fork() and execvp() do in the following code?  What about waitpid()?
+
+fork() is actually a special function. If this function can actually execute, it would execute two times for both parent process which let the pid equals to a positive value and child process which let the pid equals to 0. If it isn't executing, this function will return to a negitive value.
+
+execvp() is a function which has two parameters, the first one is the path of a file, and the second one is the array which has the argument of the file, which ended with NULL. In this part, when the child process is executing, the execvp() function will be executed next. If the execvp() failed to run, it would return "-1" and print the error message.
+
+waitpid() postpones calling executions of the current process until pid changes its state. Here, when child process stops, the WUNTRACED will return and the status will be given.
