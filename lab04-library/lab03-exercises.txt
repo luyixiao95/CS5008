@@ -1,0 +1,29 @@
+1.Each tool used in the lab
+
+1) extern: to remind the compiler that the parammeter is defined out of this file, and it can link with the this file after compiling.
+
+2) objdump: is using on compiling documents and is to display information of the object. Among them, -t is to print the dynamic symbol table of the document.
+
+3) shared object files(.so): Is used as library to link to any fils in the run-time. In this lab, it used to link the lottory.o file and the hacker file
+
+4) nm is a tool to see the lists from the files.
+
+5)ldd fool is to help find out the error in the linking process.
+
+6) LD_LIBRARY_PATH is an environment variable to reset the library at certain path.
+
+7) gcc -shared -fPIC hack.c -o libhack.so: compile the hack.c as a shared library with independent code
+
+8) export LD_PRELOAD=$pwd/libhack.so lotto: let the LD_PRELOAD environment variable export the libhack.so
+
+9) echo $LD_PRELOAD to check the environment variable that was set.
+
+10) unset LD_PRELOAD to clear the setting of environment variable
+
+
+Still a lot questions remained
+
+
+2. Advantage: it can save our compiling time and once there are some problems in one file, it can be solved in a quicker way.
+
+Disadvantage: Everyone who can get into the library can change it so it faces some security problems. 

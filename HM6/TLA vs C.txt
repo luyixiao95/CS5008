@@ -1,0 +1,1 @@
+TLA+ is a formal specification language which is different from programming languages like C developed by Lesli Lamport. When using TLA+ is kind of like modelling to the system and this won't create certain code. So it can be seen as a new way to think of the design above the coding and abstract the whole system beyond coding.

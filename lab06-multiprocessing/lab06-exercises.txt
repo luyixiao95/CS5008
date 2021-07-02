@@ -1,0 +1,6 @@
+1. There are 48 CPUs and each CPU has 12 cores in the Khory Machine
+
+2.There might be memory leak because the memory is set to heap before fork, so after forking, two processes all contains the heap memory, and only one part is freed.
+
+3. There is no need to use lock as each thread returns in a unique address so even if there is a data race, it doesn't matter as the processes can return into the right address only once.
+ 
