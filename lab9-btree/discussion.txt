@@ -1,0 +1,5 @@
+1. it would become a very low-efficient data structure, the first level (or root) of this tree is an array contains the four element 1, 3, 4 and 1000, and the node between 4 and 100 connect with a very long sorted array.
+
+2.the retrive will not be efficient and the big oh of searching will be O(logN), adding will be O(logN)
+
+3. When adding elements to the b tree, it firstly fills the leaf until the leaf is full, then the middle element moves upwards to the upper branch of the leaf, and merges with the existing one, 
